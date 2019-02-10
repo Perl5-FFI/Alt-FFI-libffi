@@ -12,6 +12,12 @@ use warnings;
 
 =head1 DESCRIPTION
 
+B<NOTE> This distribution was originally an experiment to see if the legacy FFI module (which
+was originally written using ffcall) could be rewritten to use libffi via L<FFI::Platypus>.
+It worked well enough that as of Alt-FFI-libffi 0.09 and FFI 1.14 these two distributions were
+merged using the Alt-FFI-libffi implementation.  Further development will proceed in the L<FFI>
+repository.
+
 This distribution provides an alternative implementation of L<FFI> that uses L<FFI::Platypus> which
 in turn uses C<libffi> as the underlying implementation instead of C<ffcall>.  This may be useful,
 as the underlying implementation of the original L<FFI> is C<ffcall> and is no longer supported and

@@ -4,6 +4,12 @@ Perl Foreign Function interface based on libffi
 
 # DESCRIPTION
 
+**NOTE** This distribution was originally an experiment to see if the legacy FFI module (which
+was originally written using ffcall) could be rewritten to use libffi via [FFI::Platypus](https://metacpan.org/pod/FFI::Platypus).
+It worked well enough that as of Alt-FFI-libffi 0.09 and FFI 1.14 these two distributions were
+merged using the Alt-FFI-libffi implementation.  Further development will proceed in the [FFI](https://metacpan.org/pod/FFI)
+repository.
+
 This distribution provides an alternative implementation of [FFI](https://metacpan.org/pod/FFI) that uses [FFI::Platypus](https://metacpan.org/pod/FFI::Platypus) which
 in turn uses `libffi` as the underlying implementation instead of `ffcall`.  This may be useful,
 as the underlying implementation of the original [FFI](https://metacpan.org/pod/FFI) is `ffcall` and is no longer supported and
